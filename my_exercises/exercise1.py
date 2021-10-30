@@ -1,4 +1,6 @@
 import math
+
+
 # def exercise1():
 #     print("Enter integer")
 #     x = input()
@@ -8,16 +10,17 @@ import math
 
 def exercise11():
     print("Enter integers")
-    x = input()
-    a = input()
-    b = input()
-    if(int(a)**2 + int(b)**2 > 5):
-        y = 3 * exp(a-x) + log(int(a)**2 + int(b)**2 + 5, 3)
-    elif(int(a)**2 + int(b)**2 < 1):
-        y = pow(math.tan(int(a)+int(b)),4)
+    x = int(input())
+    a = int(input())
+    b = int(input())
+    if a ** 2 + b ** 2 > 5:
+        y = 3 * math.exp(a - x) + log(a ** 2 + b ** 2 + 5, 3)
+    elif int(a) ** 2 + b ** 2 < 1:
+        y = pow(math.tan(a + b, 4))
     else:
         y = -3
     print(y)
+
 
 # exercise1()
 exercise11()
