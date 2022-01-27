@@ -8,6 +8,7 @@ def ex71():
         print(y)
         x = x + x1
 ex71()
+
 def ex85():
     x = -3.3
     x1 = 0.3
@@ -16,3 +17,12 @@ def ex85():
         print(Y)
         x = x+ x1
 ex85()
+
+def ex98(n):
+    x=1
+    sum = x
+    for i in range (n, 2*n):
+        x = 3.4* abs(x-7)
+        sum = sum + x
+    print(sum)
+ex98(5)
