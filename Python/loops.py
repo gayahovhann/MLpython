@@ -8,3 +8,11 @@ def ex71():
         print(y)
         x = x + x1
 ex71()
+def ex85():
+    x = -3.3
+    x1 = 0.3
+    while x<= 2.7:
+        Y = abs(2*x + x**3)
+        print(Y)
+        x = x+ x1
+ex85()
