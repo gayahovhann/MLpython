@@ -26,3 +26,10 @@ def ex98(n):
         sum = sum + x
     print(sum)
 ex98(5)
+
+def ex113(x, n):
+    sum = 0
+    for i in range (n):
+        sum = sum + ((x-1)*(x**2+1))**(2*n +1)
+    print(sum)
+ex113()
