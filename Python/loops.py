@@ -33,3 +33,18 @@ def ex113(x, n):
         sum = sum + ((x-1)*(x**2+1))**(2*n +1)
     print(sum)
 ex113()
+
+def ex127():
+    P=1
+    for i in range(1, 17):
+        if i % 2 != 0:
+            x = math.sin(i)**2
+        else:
+            x = 0
+        if i % 2 != 0:
+            y = math.tan(i)
+        else:
+            y = 1 / math.tan(i)
+        P = x*x*y
+    print("lalal", P)
+ex127()
