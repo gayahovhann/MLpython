@@ -48,3 +48,10 @@ def ex127():
         P = x*x*y
     print("lalal", P)
 ex127()
+
+def ex141(a):
+    sum = 0
+    for m in range(5):
+        for n in range(6):
+            sum = sum + a**(m+n)
+ex141(1)
