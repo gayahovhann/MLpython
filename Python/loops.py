@@ -55,3 +55,11 @@ def ex141(a):
         for n in range(6):
             sum = sum + a**(m+n)
 ex141(1)
+
+def ex155():
+    sum =0
+    for i in range(10, 100):
+        if i % 3 ==0:
+            sum = sum + i
+    print("sum =", sum)
+ex155()
