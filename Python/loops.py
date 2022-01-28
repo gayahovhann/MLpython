@@ -63,3 +63,17 @@ def ex155():
             sum = sum + i
     print("sum =", sum)
 ex155()
+
+def ex169(x, y):
+    answer = False
+    m = x+y
+    for i in range(2, m):
+        if m%i==0:
+            answer = True
+            break
+    if answer:
+        z = 6
+    else:
+        z = 5
+    print(z)
+ex169(5,2)
