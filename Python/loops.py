@@ -84,3 +84,13 @@ def ex183(N):
             print(i)
         break
 ex183(27)
+
+def ex207(N):
+    ans = False
+    while N != 0:    
+        if (N%10 == 2):
+            ans = True
+            break
+        N = N//10
+ex207(102)
+        
