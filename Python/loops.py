@@ -77,3 +77,10 @@ def ex169(x, y):
         z = 5
     print(z)
 ex169(5,2)
+
+def ex183(N):
+    for i in range(N):
+        if 3**i > N:
+            print(i)
+        break
+ex183(27)
