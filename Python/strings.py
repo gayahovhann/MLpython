@@ -29,3 +29,7 @@ def ex668(n):
     return new_s
 print(ex668('adefceff'))
 
+def ex679(N):
+    for i in range(N):
+        print(chr(97+i))
+ex679(5)
