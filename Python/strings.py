@@ -33,3 +33,12 @@ def ex679(N):
     for i in range(N):
         print(chr(97+i))
 ex679(5)
+
+def ex690(string1):
+    new_string = ''
+    for i in range(len(string1)):
+        if ord(string1[i]) >=97 and ord(string1[i]) <=122:
+            new_string = new_string + chr(ord(string1[i])-32)
+        else:
+            new_string = new_string + chr(ord(string1[i])+32)
+ex690('hhAeQ')
