@@ -20,3 +20,12 @@ def ex657(s):
 
     return new_s
 print(ex657('aaaaa'))
+
+def ex668(n):
+    new_s = ''
+    for i in range(len(n)):
+        if ord(n[i]) % 3 == 0:
+            new_s = new_s + n[i]
+    return new_s
+print(ex668('adefceff'))
+
