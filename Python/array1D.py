@@ -51,3 +51,19 @@ def ex361(m):
             s+= i
     return k,s
 print(ex361(15))
+
+def ex391(x_vector, y_vector):
+    # we have condition that len(x_vector) = len(y_vector) 
+    s=0
+    k=0
+    new_vector = []
+    for i in range(len(y_vector)):
+        s+=y_vector[i]
+        k+=1
+    m = s / k
+    for i in range(len(x_vector)):
+        if x_vector[i] < m:
+            new_vector += x_vector[i]
+
+    return new_vector
+print(ex391([2, 4, 1, 2], [12, 89, 44, 97]))
