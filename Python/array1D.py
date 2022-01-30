@@ -14,5 +14,12 @@ def ex241(n_vec, k):
         if n_vec[i] % 3 == 0:
             s = s + n_vec[i]
     return s
-print(ex241([2, 6, 3, 6], 3))            
+print(ex241([2, 6, 3, 6], 3))
 
+def ex271(n_vc):
+    k=0
+    for i in range(len(n_vc)):
+        if n_vc[i] == 'a':
+            k += 1
+    return k
+print(ex271(['a', 'v', 'a', 'h']))
