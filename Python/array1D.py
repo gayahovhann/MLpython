@@ -25,7 +25,6 @@ def ex271(n_vc):
     return k
 print(ex271(['a', 'v', 'a', 'h']))
 
-
 def ex301(k):
     new_vector = []
     for i in range(10, 100):
@@ -42,3 +41,13 @@ def ex331(x_vector):
                 y_vector += x_vector[i]
     return y_vector
 print(ex331([2, 4, 6, 8, 16]))
+
+def ex361(m):
+    s=0
+    k=0
+    for i in range(1, m+1):
+        if i % 5 == 0 and i % 7 != 0:
+            k+=1
+            s+= i
+    return k,s
+print(ex361(15))
