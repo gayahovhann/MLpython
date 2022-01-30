@@ -33,3 +33,12 @@ def ex301(k):
             new_vector = new_vector + i
     return new_vector
 ex301(10)
+
+def ex331(x_vector):
+    y_vector = []
+    for i in range (len(x_vector)):
+        for j in range (math.sqrt(x_vector[i])): #կլորացում դեպի վերև
+            if j == math.sqrt(x_vector[i]):
+                y_vector += x_vector[i]
+    return y_vector
+print(ex331([2, 4, 6, 8, 16]))
