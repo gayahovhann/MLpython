@@ -24,3 +24,12 @@ def ex271(n_vc):
             k += 1
     return k
 print(ex271(['a', 'v', 'a', 'h']))
+
+
+def ex301(k):
+    new_vector = []
+    for i in range(10, 100):
+        if i % k == 0:
+            new_vector = new_vector + i
+    return new_vector
+ex301(10)
