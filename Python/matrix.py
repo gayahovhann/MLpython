@@ -14,3 +14,11 @@ def ex446(m_matrix, a, b):
             if m_matrix[i][j] >= a and m_matrix[i][j]<= b:
                 s+=m_matrix[i][j]
     return s
+
+def ex471(n_matrix):
+    min_value = n_matrix[0][0]
+    for i in range(0, len(n_matrix)):
+        for j in range(0, i):
+            if n_matrix[i][j] < min_value:
+                min_value = n_matrix[i][j]
+    return min_value
