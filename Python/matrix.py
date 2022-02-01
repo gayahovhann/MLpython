@@ -1,4 +1,5 @@
 import math
+from re import A
 def ex421(matrix_m, k):
     a=0
     for i in range(len(matrix_m)):
@@ -44,12 +45,38 @@ def ex521(D, n, m_arr):
 # print(arr)
 
 
- 
+def ex546(m_matrix):
+    k=0
+    for l in range(len(m_matrix[0])):
+        for i in range(len(m_matrix)):
+            for j in range(i+1, len(m_matrix)):
+                if m_matrix[i][l]==m_matrix[j][l]:
+                    k += 1
+                    break 
+    k = len(m_matrix)-k+1
+    return k 
+    
 
+print(ex546([[1, 2, 3, 5], 
+             [3, 1, 2, 6],
+             [2, 3, 4, 5]]))    
 
 def ex571(m_matrix, k):
     zero_vec = [0]*len(m_matrix)
     new_matrix = m_matrix.copy()
     new_matrix.insert(k-1, zero_vec)
     return new_matrix
-print(ex571([[1, 5, 2], [4, 5, 7], [7, 9, 2]], 2))
+#print(ex571([[1, 5, 2], [4, 5, 7], [7, 9, 2]], 2))
+
+
+def example(vec_m):
+    a = True
+    for i in range(len(vec_m)):
+        for j in range(i+1, len(vec_m)):
+            if vec_m[i]==vec_m[j]:
+                a = False
+        break 
+    return a   
+                
+
+#print(example([1, 2, 5, 6]))    
