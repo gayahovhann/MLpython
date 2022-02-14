@@ -44,3 +44,18 @@ def ex_dict4():
     final_dict = dict.fromkeys(employees, defaults)
 
 ex_dict4()
+
+def ex_dict5():
+    sampleDict = { 
+     "name": "Kelly",
+     "age":25, 
+     "salary": 8000, 
+     "city": "New york" }
+
+    keys = ["name", "salary"]
+    final_dict = {}
+
+    for k in keys:
+        final_dict.update({k: sampleDict[k]})
+
+    print(final_dict)
