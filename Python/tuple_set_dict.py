@@ -79,3 +79,13 @@ def ex_dict7(k):
     sample_dict = {'a': 100, 'b': 200, 'c': 300}
     if k in sample_dict.values():
         print (k, "is in the dict")
+
+def ex_dict8():
+    sample_dict = {
+        "name": "Kelly",
+        "age": 25,
+        "salary": 8000,
+        "city": "New York"
+    }
+    sample_dict["location"] = sample_dict.pop("city")
+    return sample_dict
