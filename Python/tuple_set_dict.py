@@ -38,3 +38,9 @@ def ex_dict3():
     }
     print(sampleDict['class']['student']['marks']['history'])
 
+def ex_dict4():
+    employees = ['Kelly', 'Emma']
+    defaults = {"designation": 'Developer', "salary": 8000}
+    final_dict = dict.fromkeys(employees, defaults)
+
+ex_dict4()
