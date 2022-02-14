@@ -59,3 +59,17 @@ def ex_dict5():
         final_dict.update({k: sampleDict[k]})
 
     print(final_dict)
+
+def ex_dict6():
+    sample_dict = {
+        "name": "Kelly",
+        "age": 25,
+        "salary": 8000,
+        "city": "New York"
+    }  
+    keys = ["name", "salary"]
+    for k in keys:
+        sample_dict.pop(k)
+    print(sample_dict)
+
+ex_dict6()
