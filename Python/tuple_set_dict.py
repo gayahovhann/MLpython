@@ -73,3 +73,9 @@ def ex_dict6():
     print(sample_dict)
 
 ex_dict6()
+
+
+def ex_dict7(k):
+    sample_dict = {'a': 100, 'b': 200, 'c': 300}
+    if k in sample_dict.values():
+        print (k, "is in the dict")
