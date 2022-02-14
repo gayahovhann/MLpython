@@ -89,3 +89,13 @@ def ex_dict8():
     }
     sample_dict["location"] = sample_dict.pop("city")
     return sample_dict
+
+
+def ex_dict9():
+    sample_dict = {
+        'Pysics': 82,
+        'Math': 65,
+        'History': 75
+    }
+    list_of_keys = sample_dict.values()
+    return min(list_of_keys)
