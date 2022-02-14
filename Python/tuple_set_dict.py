@@ -23,3 +23,18 @@ def ex_dict2():
     dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
     dict1.update(dict2)
     print(dict1)
+
+def ex_dict3():
+    sampleDict = {
+        "class": {
+            "student": {
+                "name": "Mike",
+                "marks": {
+                    "physics": 70,
+                    "history": 80
+                }
+            }
+        }
+    }
+    print(sampleDict['class']['student']['marks']['history'])
+
