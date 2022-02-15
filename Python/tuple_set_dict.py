@@ -6,8 +6,7 @@
 
 
 
-#exrecise1 -> Convert two lists into a dictionary
-
+#Convert two lists into a dictionary
 def ex_dict1():
     keys = ['Ten', 'Twenty', 'Thirty']
     values = [10, 20, 30]
@@ -18,12 +17,14 @@ def ex_dict1():
 
     print(final_dict)
 
+#Merge two Python dictionaries into one
 def ex_dict2():
     dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
     dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
     dict1.update(dict2)
     print(dict1)
 
+#Print the value of key ‘history’ from the below dict
 def ex_dict3():
     sampleDict = {
         "class": {
@@ -38,6 +39,7 @@ def ex_dict3():
     }
     print(sampleDict['class']['student']['marks']['history'])
 
+#Initialize dictionary with default values
 def ex_dict4():
     employees = ['Kelly', 'Emma']
     defaults = {"designation": 'Developer', "salary": 8000}
@@ -45,6 +47,8 @@ def ex_dict4():
 
 ex_dict4()
 
+#Create a dictionary by extracting 
+# the keys from a given dictionary
 def ex_dict5():
     sampleDict = { 
      "name": "Kelly",
@@ -60,6 +64,8 @@ def ex_dict5():
 
     print(final_dict)
 
+
+#Delete a list of keys from a dictionary
 def ex_dict6():
     sample_dict = {
         "name": "Kelly",
@@ -74,12 +80,14 @@ def ex_dict6():
 
 ex_dict6()
 
-
+#Check if a value exists in a dictionary
 def ex_dict7(k):
     sample_dict = {'a': 100, 'b': 200, 'c': 300}
     if k in sample_dict.values():
         print (k, "is in the dict")
 
+
+#Rename key of a dictionary
 def ex_dict8():
     sample_dict = {
         "name": "Kelly",
@@ -90,7 +98,8 @@ def ex_dict8():
     sample_dict["location"] = sample_dict.pop("city")
     return sample_dict
 
-
+#Get the key of a minimum value
+#from the following dictionary
 def ex_dict9():
     sample_dict = {
         'Pysics': 82,
@@ -100,9 +109,10 @@ def ex_dict9():
     list_of_keys = sample_dict.values()
     return min(list_of_keys)
 
+
+# Write a Python program to change Brad’s salary 
+# to 8500 in the following dictionary.
 def ex_dict10():
-    # Write a Python program to change Brad’s salary 
-    # to 8500 in the following dictionary.
 
     sample_dict = {
         'emp1': {'name': 'Jhon', 'salary': 7500},
