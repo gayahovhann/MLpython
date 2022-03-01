@@ -17,3 +17,8 @@ str3 = """Hello my Number is 123456789 and
 ragex = '\d'
 match3 = re.findall(ragex, str3)
 print(match3)
+
+#example4
+p = re.compile('[a-e]')
+print(p.findall("My name is Universe"))
+
