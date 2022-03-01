@@ -10,3 +10,10 @@ print(match1.end())
 s2 = 'Take me. to church'
 match = re.search(r'\.', s2)
 print(match)
+
+#example3
+str3 = """Hello my Number is 123456789 and
+            my friend's number is 987654321"""
+ragex = '\d'
+match3 = re.findall(ragex, str3)
+print(match3)
