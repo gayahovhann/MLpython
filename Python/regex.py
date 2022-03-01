@@ -28,3 +28,13 @@ print(p5.findall('The war has began on 24th February 2022'))
 
 p5 = re.compile('\d+')
 print(p5.findall('The war has began on 24th February 2022'))
+
+#example6
+p6 = re.compile('\w')
+print(p6.findall("He said *  in some_lang."))
+ 
+p6 = re.compile('\w+')
+print(p6.findall("He said *  in some_lang."))
+
+p6 = re.compile('\W')
+print(p6.findall("He said *  in some_lang."))
