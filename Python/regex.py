@@ -38,3 +38,20 @@ print(p6.findall("He said *  in some_lang."))
 
 p6 = re.compile('\W')
 print(p6.findall("He said *  in some_lang."))
+
+
+#regex exercise solution with strings
+str1 = input("enter email please:  ")
+a = len(str1)
+substr1 = str1[0:8]
+substr2 = str1[8:a]
+flago = True
+for i in range(len(substr1)):
+    if ord(substr1[i]) >= 97 and ord(substr1[i]) <=112:
+        flago = True
+    else: 
+        flago = False
+if (flago == True and (substr2 == '@mail.ru' or substr2 == '@gmail.com')):
+    print('Valid mail, olalalaa')
+else:
+    print('Invalid mail, oooopppss')
