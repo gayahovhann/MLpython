@@ -1,5 +1,5 @@
-#example1
 import re
+#example1
 s1 = 'All I want for Christmas is you, baby'
 
 match1 = re.search(r'is', s1)
@@ -22,3 +22,9 @@ print(match3)
 p = re.compile('[a-e]')
 print(p.findall("My name is Universe"))
 
+#example5
+p5 = re.compile('\d')
+print(p5.findall('The war has began on 24th February 2022'))
+
+p5 = re.compile('\d+')
+print(p5.findall('The war has began on 24th February 2022'))
