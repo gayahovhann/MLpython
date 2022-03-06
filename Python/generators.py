@@ -1,4 +1,4 @@
-example1
+#example1
 def genfunc():
     yield 1
     yield 2
