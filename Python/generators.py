@@ -31,3 +31,18 @@ while True:
         print(item)
     except StopIteration:
         break
+
+#example4 map(), filter(), reduce()
+
+def greet(name):
+    return "Hello, {}! {}".format(name, "uhgiygiuhiu")
+
+def greet_upper(name):
+    return "Hello, {}!".format(name).upper()
+
+
+
+def pr_greet(f, n):
+    print(f(n))
+
+pr_greet(greet, 'gh')
