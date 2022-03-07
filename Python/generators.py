@@ -7,3 +7,15 @@ def genfunc():
 for i in genfunc():
     print(i)
 
+#example2
+
+def square():
+    i = 1
+    while True:
+        yield i*i
+        i += 1
+
+for k in square():
+    if k > 200:
+        break
+    print(k)
