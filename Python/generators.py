@@ -58,3 +58,19 @@ tuple11 =  (4, 65, 3, 1, 12, 8, 19)
 new_tuple = tuple(map(lambda x: x+2, tuple11))
 
 print(new_tuple)
+
+
+#example7 filter()
+
+def func6(k):
+    if k > 10:
+        return k
+
+x = filter(func6, (10, 12, 54, 9))
+print(x)
+print(list(x))
+
+#we can crite same code like this
+y = filter(lambda k: (k>10), (10, 12, 54, 9))
+print(y)
+print(list(y))
