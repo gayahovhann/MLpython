@@ -51,3 +51,10 @@ def func(a):
 b = map(func, (1, 3, 2, 4)) 
 print(b)
 print(set(b))
+
+
+#example 6 map()
+tuple11 =  (4, 65, 3, 1, 12, 8, 19)
+new_tuple = tuple(map(lambda x: x+2, tuple11))
+
+print(new_tuple)
