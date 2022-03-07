@@ -19,3 +19,15 @@ for k in square():
     if k > 200:
         break
     print(k)
+
+#example3
+
+str1 = 'onestring'
+str_obj = iter(str1)
+
+while True:
+    try:
+        item = next(str_obj)
+        print(item)
+    except StopIteration:
+        break
