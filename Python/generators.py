@@ -8,7 +8,6 @@ for i in genfunc():
     print(i)
 
 #example2
-
 def square():
     i = 1
     while True:
@@ -21,7 +20,6 @@ for k in square():
     print(k)
 
 #example3
-
 str1 = 'onestring'
 str_obj = iter(str1)
 
@@ -33,7 +31,6 @@ while True:
         break
 
 #example4 map(), filter(), reduce()
-
 def greet(name):
     return "Hello, {}! {}".format(name, "uhgiygiuhiu")
 
@@ -41,8 +38,16 @@ def greet_upper(name):
     return "Hello, {}!".format(name).upper()
 
 
-
 def pr_greet(f, n):
     print(f(n))
 
 pr_greet(greet, 'gh')
+
+
+#example 5 map()
+def func(a):
+    return a*a
+
+b = map(func, (1, 3, 2, 4)) 
+print(b)
+print(set(b))
