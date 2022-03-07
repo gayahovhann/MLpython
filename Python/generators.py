@@ -61,7 +61,6 @@ print(new_tuple)
 
 
 #example7 filter()
-
 def func6(k):
     if k > 10:
         return k
@@ -74,3 +73,8 @@ print(list(x))
 y = filter(lambda k: (k>10), (10, 12, 54, 9))
 print(y)
 print(list(y))
+
+#example8 reduce()
+from functools import reduce
+
+print(reduce(lambda a,b: a+b, [1, 2, 3, 4]))
