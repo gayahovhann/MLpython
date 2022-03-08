@@ -47,3 +47,15 @@ class MyClass:
 # valodik.ex1()
 # valodik.ex2()
 
+#inheritance
+class Car:
+    def __init__(self, year, velocity):
+        self.year = year
+        self.velocity = velocity
+
+    def say_me(self):
+        print("I was born at", self.year, ", my velocity is", self.velocity)
+
+
+carcar = Car(1857, 220)
+carcar.say_me()
