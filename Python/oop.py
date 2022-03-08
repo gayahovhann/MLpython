@@ -80,3 +80,13 @@ class TruckCar(Car):
 
     def vol(self):
         print("My volume is {} litr".format(self.volume))
+
+pescar = PassengerCar(1875, 90, 7)
+
+pescar.capacity()
+pescar.say_me()
+
+
+trcar = TruckCar(1875, 90, 200)
+
+trcar.vol()
