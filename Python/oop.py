@@ -42,10 +42,10 @@ class MyClass:
             print(i, 'lala')
         return self.c
     
-# valodik = MyClass(2)
-# print(type(valodik))
-# valodik.ex1()
-# valodik.ex2()
+valodik = MyClass(2)
+print(type(valodik))
+valodik.ex1()
+valodik.ex2()
 
 #inheritance
 class Car:
@@ -72,3 +72,11 @@ class PassengerCar(Car):
         print("I can move {} person, my velocity is {} ".format(self.seat_number, self.velocity))
 
 
+
+class TruckCar(Car):
+    def __init__(self, year, velocity, volume):
+        super().__init__(year, velocity)
+        self.volume = volume
+
+    def vol(self):
+        print("My volume is {} litr".format(self.volume))
