@@ -59,3 +59,16 @@ class Car:
 
 carcar = Car(1857, 220)
 carcar.say_me()
+
+
+
+class PassengerCar(Car):
+    def __init__(self, year, velocity, seat_number):
+        super().__init__(year, velocity)
+        self.seat_number = seat_number
+        
+    
+    def capacity(self):
+        print("I can move {} person, my velocity is {} ".format(self.seat_number, self.velocity))
+
+
