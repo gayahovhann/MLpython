@@ -13,3 +13,12 @@ class Graund(Animals):
 
     def aboutground(self):
         print("I am animal, my weight and height are {} kg and {} cm, my velocity on graound is {}".format(self.weight, self.height, self.velocity_on_ground))
+
+
+class Water(Animals):
+    def __init__(self, height, weight, velocity_in_water):
+        super().__init__(height, weight)
+        self.velocity_in_water = velocity_in_water
+
+    def aboutwater(self):
+        print("I am animal, my weight and height are {} kg and {} cm, my velocity in water is {}".format(self.weight, self.height, self.velocity_in_water))
