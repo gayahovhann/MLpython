@@ -33,3 +33,7 @@ class Air(Animals):
     def aboutair(self):
         print("My name is animal, my weight and height are {} kg and {} cm, my velocity in air is {}".format(self.weight, self.height, self.velocity_in_air))
 
+
+general_animal = Animals(25, 65)
+general_animal.aboutanimal()
+#....
