@@ -24,3 +24,21 @@ class MathFunc:
 
 vle = MathFunc(1, 2, 1, 3)
 print(vle.__divmod__())
+
+
+
+class Kotorak:
+    def __init__(self, m1, m2):
+        self.m1 = m1
+        self.m2 = m2
+
+    def __add__(self, other):
+        alal=Kotorak(1, 2)
+        nor1 = other.m2 * self.m2
+        nor2 = self.m1*other.m2 +self.m2*other.m1
+        finish = Kotorak(nor2, nor1)
+        return finish
+
+
+
+    
