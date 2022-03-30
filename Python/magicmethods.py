@@ -47,6 +47,13 @@ class Kotorak:
         finish = Kotorak(nor2, nor1)
         return finish
 
+    def __mul__(self, other):
+        a=Kotorak(1, 2)
+        nor1 = other.m2 * self.m2
+        nor2 = self.m1*other.m1
+        finish = Kotorak(nor2, nor1)
+        return finish
+
 
 
 
