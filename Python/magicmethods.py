@@ -62,4 +62,20 @@ class Kotorak:
 
 
 
+    # def __str__(self):
+    #     return str(self.nor2) + '/' +str(self.nor1)
+
+vle  = Kotorak(1, 15)
+vle2  = Kotorak(2, 15)
+
+ole = vle + vle2
+
+blo = vle * vle2
+# print(ole.m1, ole.m2)
+# print(vle + vle2)
+# print(vle - vle2)
+# print(vle.__mul__(vle2))
+# print(vle.__divmod__(vle2))
+
+
     
